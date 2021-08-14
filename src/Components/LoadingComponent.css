@@ -1,0 +1,9 @@
+.LoadingBody {
+    background-color: var(--dark-color);
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

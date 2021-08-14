@@ -1,0 +1,30 @@
+.SidebarDiv {
+    width: 242px;
+    background-color: var(--dark-color);
+    color: white;
+    z-index: 1;
+    top: 0;
+    height: auto;
+}
+
+.SidebarInputs li {
+    cursor: pointer;
+    padding: 1.2em;
+}
+
+.SidebarInputs {
+    background: repeating-linear-gradient(white);
+    position: relative;
+    user-select: none;
+}
+
+.SidebarInputs li:hover {
+    background-color: var(--darker-orange);
+    transition: 400ms;
+    color: black;
+}
+
+.dropdown {
+    padding-left: 1em;
+    margin-top: 4px !important;
+}

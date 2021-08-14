@@ -1,0 +1,127 @@
+:root {
+    --orange-color: #F8BD69;
+    --grey-color: #eaeded;
+    --dark-color: #131921;
+    --lighter-orange: #f0c352;
+    --darker-orange: #b47630;
+    --navbar-height: 60px;
+}
+
+.navbar {
+    position: sticky;
+    width: 100%;
+    height: var(--navbar-height);
+    left: 0px;
+    top: 0px;
+    background-color: var(--dark-color);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.navbar__logo {
+    width: 102.96px;
+    height: 37px;
+    object-fit: contain;
+}
+
+.navbar__logoContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    color: whitesmoke;
+    align-content: center;
+    align-items: center;
+}
+
+.navbar__logoContainer span {
+    width: 90px;
+    word-wrap: normal;
+}
+
+.navbar__searchbar {
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+    flex: 1 1 20%;
+}
+
+.navbar__searchbarInput {
+    width: 100%;
+    border: 0 solid;
+    text-indent: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.navbar__searchbarInput:focus-visible {
+    border: 2px solid var(--orange-color);
+    box-shadow: 2px solid var(--orange-color);
+    outline: 0;
+    border-right: 0;
+}
+
+.navbar__searchbarIcon {
+    padding: 0.26em;
+    background-color: var(--orange-color);
+    outline: 0;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.navbar__inputs {
+    display: flex;
+    align-content: stretch;
+    color: white;
+}
+
+.navbar__inputText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 300;
+    color: white;
+}
+
+.navbar__inputText * {
+    text-decoration: none !important;
+}
+
+.MuiInputBase-input {
+text-indent: 15px;
+}
+@media screen and (max-width: 600px) {
+    .navbar__inputs {
+        align-content: center;
+        align-items: center;
+    }
+    .navbar__searchbarIcon {
+        border-radius: 2px;
+        padding: 0.35em;
+        margin: 1rem;
+        margin-left: -0.2rem;
+    }
+    .navbar__wrapper {
+        display: flex;
+        flex-flow: wrap;
+    }
+    .navbar__search {
+        background-color: var(--dark-color);
+        padding: 0.99em;
+        width: 100%;
+        height: 10px;
+    }
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+    .navbar__logoContainer {
+        flex-grow: 1;
+    }
+    .navbar__inputs a {
+        margin-left: calc(100vw / 10);
+    }
+}
